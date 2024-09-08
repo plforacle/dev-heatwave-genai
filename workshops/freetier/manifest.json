@@ -35,6 +35,11 @@
         },
 
         {
+          "title": "Lab 5: Build A RAG-powered AI chat app ",
+          "filename": "../../develop-app/develop-app.md"
+        },
+
+        {
           "title": "Stop Services",
           "filename": "../../stop-services/stop-services.md"
         },
