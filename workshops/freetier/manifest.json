@@ -20,8 +20,8 @@
         },
 
         {
-          "title": "Lab 2: Connect to the HeatWave Instance from Visual Studio Code",
-          "filename": "../../connect-dbs-vscode/connect-dbs-vscode.md"
+          "title": "Lab 2: Create Client Server",
+          "filename": "../../create-compute/create-compute.md"
         },
 
         {
