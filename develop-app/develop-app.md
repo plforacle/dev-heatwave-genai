@@ -288,6 +288,8 @@ You may now **proceed to the next lab**.
 
 - [MySQL Documentation](https://dev.mysql.com/)
 
+You may now **proceed to the next lab**.
+
 ## Acknowledgements
 
 - **Author** - Aijaz Fatima, Product Manager
