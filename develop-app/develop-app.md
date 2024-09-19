@@ -1,4 +1,4 @@
-# Develop MySQL HeatWave App with LAMP
+# Develop MySQL HeatWave App with LAMP - Build A RAG-powered AI chat app 
 
 ## Introduction
 
@@ -29,6 +29,7 @@ In this lab, you will be guided through the following tasks:
 - Install Apache and PHP
 - Create PHP / MYSQL Connect Application
 - Create LAMP Application
+- Test LAMP Application
 
 ### Prerequisites
 
@@ -261,7 +262,9 @@ In this lab, you will be guided through the following tasks:
     <copy>sudo nano chat_interface.php</copy>
     ```
 
-5. Run the application as follows
+## Task 5: Test HeatWave RAG Chat Application
+
+1. Run the application as follows
     - Access the chat_interface.php file through your web browser (e.g., http://computeIP/app/chat_interface.php).
     - You'll see a chat interface with a text input field at the bottom.
     - Type your question into the input field and click "Send" or press Enter.
@@ -269,14 +272,14 @@ In this lab, you will be guided through the following tasks:
     - Your chat history will be maintained across page reloads using PHP sessions.
     - To clear the chat history, click the "Clear Chat History" button at the bottom of the page.
 
-6. Sample quesions
+2. Sample quesions
 
     - What is Oracle?
     - What is HeatWave?
-    - What is MySQL ?
-    - What is OCI ?
-
-    ![RAG](./images/rag-app.png "rag app")
+    - What is MySQL?
+    - How does HeatWave integrate with MySQL?
+    - What is OCI?
+    - Can you explain the benefits of using OCI for database management?
 
 You may now **proceed to the next lab**.
 
