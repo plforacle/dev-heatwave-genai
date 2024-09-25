@@ -146,7 +146,7 @@ Dynamic groups allow you to group Oracle Cloud Infrastructure resources as princ
     ```bash
     <copy>ALL{resource.type='mysqldbsystem', resource.compartment.id = '<OCIDComparment>'}</copy>
     ```
-    Replace OCIDComparment with the OCID of the compartment you had copied in Task 3.
+    Replace OCIDComparment with the OCID of the compartment you had copied in Task 4 items 1 and 2.
 
     For example:
 
