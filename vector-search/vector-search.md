@@ -230,7 +230,7 @@ Pre-authenticated requests provide a way to let you access a bucket or an object
 
 ## Task 6: Set up a vector store
 
-1. Go to Visual Studio Code, and under **DATABASE CONNECTIONS**, click **Open New Database Connection** icon next to your HeatWave instance to connect to it. 
+1. Go to Visual Studio Code, and under **DATABASE CONNECTIONS**, click **heatwave-genai-db-connection** icon next to your HeatWave instance to connect to it. 
 
     ![Connect database](./images/vscode-connection.png "Connect database")
 
