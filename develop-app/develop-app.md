@@ -266,7 +266,7 @@ _Estimated Lab Time:_ 20 minutes
 2. Download application code
 
     ```bash
-    <copy> sudo wget sudo wget https://objectstorage.us-ashburn-1.oraclecloud.com/p/XZ6EnSdgTwzEvNUtrWHUlqYS9pVnwC6HVhqq0c4XbtDREUE7kYnm7hQ-BrRjM6ju/n/mysqlpm/b/mysql_gen_ai/o/php-rag-chat-app/app.zip</copy>
+    <copy> sudo wget sudo wget https://objectstorage.us-ashburn-1.oraclecloud.com/p/r73t2H8D425uNocg2E22-B_2vfPXG86Opsfdb6CGglaiw6Zy7IRyFdfBbOe93qXF/n/mysqlpm/b/mysql_gen_ai/o/php-rag-chat-app/app.zip</copy>
     ```
 
 3. unzip Application code
