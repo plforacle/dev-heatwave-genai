@@ -302,6 +302,8 @@ _Estimated Lab Time:_ 20 minutes
 
 1. Run the application as follows
     - Access the chat_interface.php file through your web browser (e.g., http://computeIP/app/chat_interface.php).
+    ![LAMP Chat App](./images/lamp-chat-app.png "LAMP Chat App")
+
     - You'll see a chat interface with a text input field at the bottom.
     - Type your question into the input field and click "Send" or press Enter.
     - The application will send your query to the HeatWave RAG system and display the response along with any relevant citations.
