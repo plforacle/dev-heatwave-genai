@@ -1,4 +1,4 @@
-# Develop Build LAMP RAG-powered AI Chat Appxxx
+# Develop Build LAMP RAG-powered AI Chat App
 
 ## Introduction
 
