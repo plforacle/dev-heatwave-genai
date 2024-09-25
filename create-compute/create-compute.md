@@ -18,74 +18,79 @@ _Estimated Time:_ 10 minutes
 
 In this lab, you will be guided through the following tasks:
 
-- Create SSH Key on OCI Cloud 
 - Create Compute Instance
 
 ### Prerequisites
 
 - An Oracle Free Tier or Paid Cloud Account
-- A web browser
-- Should have completed the previous lab
+- You have completed Lab 2.
 
-## Task 1: Create Compute instance
+## Task 1: Create Compute Instance
 
-You will need a compute Instance to connect to your brand new MySQL database. 
+You need a compute instance to connect to the Heatwave instance. 
 
-1. To launch a Linux Compute instance, go to 
-    Navigation Menu
-    Compute
-    Instances
-    ![CONNECT](./images/05compute01.png " ")
+1. Click the **Navigation menu** in the upper left, navigate to **Compute**, and under **Compute**, select **Instances**.
+  
+    ![Click compute](./images/click-compute.png "Click compute")
 
-2. On Instances in **(root)** Compartment, click  **Create Instance**
-    ![CONNECT](./images/05compute02-00.png " ")
+2. Ensure **heatwave-genai** compartment is selected, and click click  **Create instance**. 
 
-3. On Create Compute Instance 
+     ![Create instance](./images/create-instance.png "Create instance")
 
-    Enter Name
+3. On **Create compute instance** page, enter the name of the compute instance.
 
     ```bash
-    <copy>heatwave-genai-web-server</copy>
+    <copy>heatwave-genai-compute</copy>
     ```
 
-4. Make sure **(root)** compartment is selected
+4. Ensure **heatwave-genai** compartment is selected.
 
-5. On Placement, keep the selected Availability Domain
+    ![Compute instance name](./images/compute-name.png "Compute instance name")
 
-6. On Image and Shape click the **Edit** link 
-    - On Image: Keep the selected Image, Oracle Linux 8 
+5. In the **Placement** field, keep the selected **Availability Domain**.
 
-    ![CONNECT](./images/05compute03.png " ")  
+6. In the **Image and Shape** field, keep the selected image, **Oracle Linux 8**, and the default shape. 
 
-    - On Shape - Click the **change shape** button
-    - Select Instance Shape: VM.Standard.E2.2
+    ![Compute image and shape](./images/compute-image-shape.png "Compute image and shape")
 
-    ![CONNECT](./images/05compute-shape.png " ")  
+7. In **Primary VNIC information** field, ensure the following settings are selected:
 
-7. On Networking, make sure '**myvcn**' is selected
+    - **Primary Network**: **heatwave-genai-vcn**
 
-    'Assign a public IP address' should be set to Yes 
+    - **Subnet**: **public-subnet-heatwave-genai-vcn**
 
-    ![CONNECT](./images/05compute04.png " ")
+8. In **Primary VNIC IP addresses** field, ensure the following settings are selected:
 
-8. On Add SSH keys, paste the public key from the notepad. 
+    - **Private IPv4 address**: **Automatically assign private IPv4 address**
+
+    - **Public IPv4 address**: Selected
+
+    ![Network settings](./images/networking.png "Network settings")
+
+9. In **Add SSH keys** field, click **Generate a key pair for me**.
   
-    ![CONNECT](./images/05compute-id-rsa-paste.png " ")
+    ![Add SSH Keys](./images/ssh-keys.png "Add SSH Keys")
 
-9. Click '**Create**' to finish creating your Compute Instance. 
+10.  Save the downloaded SSH keys in your .ssh folder. and rename the key. For example:
 
-10. The New Virtual Machine will be ready to use after a few minutes. The state will be shown as 'Provisioning' during the creation
+    ```bash
+    <copy>ssh-key-2024</copy>
+    ```
 
-    ![CONNECT](./images/05compute07.png " ")
+     ![Save SSH keys](./images/ssh-key-store.png "Save SSH Keys")
 
-11. The state 'Running' indicates that the Virtual Machine is ready to use. 
+11. Click '**Create**' to create your compute instance. 
 
-    ![CONNECT](./images/05compute08-a.png " ")
+12. The compute instance will be ready to use after a few minutes. The state is shown as **Provisioning** while the instance is creating.
+
+13. When the compute instance is ready to use, the state is shown as **Running**. *Note* the **Public IP address** and the **Username**.
+
+    ![Compute instance is created](./images/compute.png "Compute instance is created")
 
 You may now **proceed to the next lab**.
 
 ## Acknowledgements
 
-- **Author** - Perside Foster, MySQL Principal Solution Engineer
+- **Author** - Aijaz Fatima, Product Manager
 - **Contributors** - Mandy Pang, Senior Principal Product Manager
-- **Last Updated By/Date** - Perside Foster, MySQL Principal Solution Engineer, September 2024
+- **Last Updated By/Date** - Aijaz Fatima, Product Manager, September 2024

@@ -1,4 +1,4 @@
-# Develop MySQL HeatWave App with LAMP - Build A RAG-powered AI chat app 
+# Develop Build LAMP RAG-powered AI Chat Appxxx
 
 ## Introduction
 
@@ -6,40 +6,77 @@ MySQL HeatWave seamlessly integrates with existing Oracle services, such as Orac
 
 In this lab you will build a LAMP stack and deploy a prebuilt  HeatWave RAG Chat Application. The application  is designed to make interacting with MySQL HeatWave's Retrieval-Augmented Generation (RAG) capabilities straightforward and user-friendly.
 
-Key features of the application:
+## Objectives
 
-Web-based chat interface for easy question-asking and response viewing
-Integration with MySQL HeatWave's RAG functionality for informed AI responses
-Session-based chat history for ongoing conversations
-Citation display to show where information is sourced from
-Option to clear chat history as needed
+In this lab, you will be guided through the following tasks:
 
-On the technical side, the application uses PHP for the backend, HTML and CSS for the frontend, and MySQL HeatWave for data storage and RAG processing. This solution bridges complex database operations with user-friendly interaction, allowing easy access to MySQL HeatWave's AI capabilities through a simple chat interface.
+- Connect to Compute instance using VSCode and SSH
+- Install Apache and PHP
+- Create PHP / MYSQL Connect Application
+- Create LAMP ApplicaConnect to Compute instance using VSCode and SSHtion
+- Test LAMP Application
 
+## Prerequisites
 
+- Must complete Lab 5
+
+## About the HeatWave RAG Chat Application
+
+This application provides a user-friendly web interface for interacting with MySQL HeatWave's Retrieval-Augmented Generation (RAG) capabilities. It allows users to ask questions and receive AI-generated responses based on the information stored in the HeatWave database.
+
+### Application Architecture Diagram
+
+The following diagram provides a clear visual representation of how the different components of your MySQL HeatWave RAG Chat Application are structured and how they interact with each other. The arrows indicate the flow of data and interactions between the components. For example:
+
+- The Web Browser interacts with the Web Server
+- The PHP Runtime manages the Chat Interface and HeatWave RAG Class
+- The HeatWave RAG Class interacts with the MySQL HeatWave Instance
+- The Chat Interface interacts with the PHP Session for storing chat history
+
+![Application Architecture](./images/chat-app-architecture.png "Application Architecture")
+
+### Key Features:
+
+1. Simple Web Interface: Easy-to-use chat interface for asking questions and viewing responses.
+2. RAG Integration: Utilizes MySQL HeatWave's RAG functionality to generate informed responses.
+3. Chat History: Maintains a session-based chat history for continuous conversations.
+4. Citation Display: Shows relevant citations for the AI's responses, enhancing transparency and trustworthiness.
+5. Clear History Option: Allows users to reset the chat history as needed.
+
+### Technical Overview:
+
+1. Backend: Linux, Apache, PHP, and MySQL HeatWave integration
+2. Frontend: HTML and CSS for a responsive design
+3. Data Storage: HeatWave Lakehouse and MySQL for vector embeddings and RAG processing
+
+This solution bridges the gap between complex database operations and user-friendly interaction, making it easy for users to leverage the power of MySQL HeatWave's AI capabilities through a simple chat interface. This introduction provides a quick overview of what the application does, its main features, and a brief technical summary. It's designed to give users and developers a clear understanding of the solution at a glance
 
 **Note:** This application code is intended for educational purposes only. It is designed to help developers learn and practice application development skills with MySQL HeatWave on OCI. The code is not designed to be used in a production environment
 
 _Estimated Lab Time:_ 20 minutes
 
-### Objectives
 
-In this lab, you will be guided through the following tasks:
+## Task 1: Connect to Compute instance using VSCode and SSH
 
-- Install Apache and PHP
-- Create PHP / MYSQL Connect Application
-- Create LAMP Application
-- Test LAMP Application
+1. In Visual Studio Code, click the **New Terminal**  in the menu bar to open a terminal screen.
+    ![VSCODE Open Terminal](./images/vscode-terminal-select.png "VSCODE Open Terminal")
 
-### Prerequisites
+2. Click **Maximize Icon** to set the terminal to full screen.
 
-- An Oracle Trial or Paid Cloud Account
-- Some Experience with MySQL SQL and  PHP
-- Completed Lab 4
+    ![VSCODE Maximize Terminal](./images/vscode-terminal-maximize.png "VSCODE Maximize Terminal")
 
+3. Connect to the Compute instance from the terminanl using SSH:
+    - Indicate the location of the private key of your compute instance **heatwave-genai-compute**. 
+    - Enter the username **opc** and the Public **IP Address** of your compute instance
+    - (Your SSH login command should look like this: **ssh -i ~/.ssh/id_rsa opc@132.145.170...** 
 
+    ```bash
+    <copy>ssh -i ~/.ssh/id_rsa opc@<your_compute_instance_ip></copy>
+    ```
 
-## Task 1: Install App Server (APACHE)
+    ![VSCODE Connect to Compute](./images/vscode-terminal-ssh.png "VSCODE Connect to Compute")
+
+## Task 2: Install App Server (APACHE)
 
 1. Open OCI Cloud Consloe. If not already connected with SSH, on Command Line, connect to the Compute instance using SSH ... be sure replace the  "private key file"  and the "new compute instance ip"
 
@@ -83,7 +120,7 @@ In this lab, you will be guided through the following tasks:
 
     **Example: http://129.213....**
 
-## Task 2: Install PHP
+## Task 3: Install PHP
 
 1. Install php:
 
@@ -135,7 +172,7 @@ In this lab, you will be guided through the following tasks:
 
    Example: http://129.213.167.../info.php
 
-## Task 3: Create MySQL HeatWave / PHP connect Test app
+## Task 4: Create MySQL HeatWave / PHP connect Test app
 
 1. Security update"   set SELinux to allow Apache to connect to MySQL
 
@@ -218,7 +255,7 @@ In this lab, you will be guided through the following tasks:
 
     Example: http://129.213.167..../dbtest.php  
 
-## Task 4: Deploy HeatWave RAG Chat Application
+## Task 5: Deploy HeatWave RAG Chat Application
 
 1. Go to the development folder
 
@@ -255,14 +292,14 @@ In this lab, you will be guided through the following tasks:
 
 4. In chat_interface.php, locate the following line
 
-    - "$rag = new HeatWaveRAG('your_mysql_host', 'your_username', 'your_password', 'genai_db');"
-    - Replace 'your_mysql_host', 'your_username', and 'your_password' with your actual MySQL HeatWave connection details.
+    - "$rag = new HeatWaveRAG('your\_mysql\_host', 'your\_username', 'your\_password', 'genai\_db');"
+    - Replace 'your\_mysql\_host', 'your\_username', and 'your\_password' with your actual MySQL HeatWave connection details.
 
     ```bash
     <copy>sudo nano chat_interface.php</copy>
     ```
 
-## Task 5: Test HeatWave RAG Chat Application
+## Task 6: Test HeatWave RAG Chat Application
 
 1. Run the application as follows
     - Access the chat_interface.php file through your web browser (e.g., http://computeIP/app/chat_interface.php).
