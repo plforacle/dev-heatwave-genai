@@ -266,7 +266,7 @@ _Estimated Lab Time:_ 20 minutes
 2. Download application code
 
     ```bash
-    <copy> sudo wget sudo wget https://objectstorage.us-ashburn-1.oraclecloud.com/p/W4gmtAY6PA-ABnH_LVYZhoK5X8UZrDxoOBfnMkLkEmJn6hhz8SYU1qoSanHNnz_-/n/mysqlpm/b/mysql_gen_ai/o/php-rag-chat-app/app.zip</copy>
+    <copy> sudo wget sudo wget https://objectstorage.us-ashburn-1.oraclecloud.com/p/XZ6EnSdgTwzEvNUtrWHUlqYS9pVnwC6HVhqq0c4XbtDREUE7kYnm7hQ-BrRjM6ju/n/mysqlpm/b/mysql_gen_ai/o/php-rag-chat-app/app.zip</copy>
     ```
 
 3. unzip Application code
@@ -294,6 +294,7 @@ _Estimated Lab Time:_ 20 minutes
 
     - "$rag = new HeatWaveRAG('your\_mysql\_host', 'your\_username', 'your\_password', 'genai\_db');"
     - Replace 'your\_mysql\_host', 'your\_username', and 'your\_password' with your actual MySQL HeatWave connection details.
+    - example:  $rag = new HeatWaveRAG('10.0.1...', 'admin', 'Welcom...', 'genai_db');
 
     ```bash
     <copy>sudo nano chat_interface.php</copy>
