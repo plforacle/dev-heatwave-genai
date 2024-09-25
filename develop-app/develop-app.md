@@ -78,13 +78,7 @@ _Estimated Lab Time:_ 20 minutes
 
 ## Task 2: Install App Server (APACHE)
 
-1. Open OCI Cloud Consloe. If not already connected with SSH, on Command Line, connect to the Compute instance using SSH ... be sure replace the  "private key file"  and the "new compute instance ip"
-
-     ```bash
-    <copy>ssh -i private_key_file opc@new_compute_instance_ip</copy>
-     ```
-
-2. Install app server
+1. Install app server
 
     a. Install Apache
 
@@ -116,7 +110,7 @@ _Estimated Lab Time:_ 20 minutes
     <copy>sudo firewall-cmd --reload</copy>
     ```
 
-3. From a browser test apache from your loacal machine using the Public IP Address of your Compute Instance
+2. From a browser test apache from your loacal machine using the Public IP Address of your Compute Instance
 
     **Example: http://129.213....**
 
