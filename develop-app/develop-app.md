@@ -294,6 +294,10 @@ _Estimated Lab Time:_ 20 minutes
 
     - "$rag = new HeatWaveRAG('your\_mysql\_host', 'your\_username', 'your\_password', 'genai\_db');"
     - Replace 'your\_mysql\_host', 'your\_username', and 'your\_password' with your actual MySQL HeatWave connection details.
+        - 'your\_mysql\_host' = HeatWave DB system (heatwave-genai-db) IP Address.
+        - 'your\_username' = HeatWave DB system user_name (**admin** if you used the Lab's instructions).
+        - 'your\_password' = Pasword you used when creating the HeatWave DB system.
+        - Do not change 'genai\_db' it is the schema name of the vector store database.
     - example:  $rag = new HeatWaveRAG('10.0.1...', 'admin', 'Welcom...', 'genai_db');
 
     ```bash
